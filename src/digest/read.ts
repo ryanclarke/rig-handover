@@ -1,6 +1,6 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import type { DigestRow, Night, ReadNight, RunLine, RunStatus } from './types.js';
+import type { DigestRow, ReadNight, RunLine, RunStatus } from './types.js';
 
 const NIGHT = /^\d{4}-\d{2}-\d{2}$/;
 const STATUSES: readonly RunStatus[] = ['ok', 'retry', 'fail'];
